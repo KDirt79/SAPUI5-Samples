@@ -1,0 +1,42 @@
+<mvc:View
+        controllerName="com.fahmaih.samples.products.controller.Home"
+        xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m">
+    <Page   title="{i18n>appTitle}"
+            class="sapUiContentPadding"
+            showNavButton="false">
+        <subHeader>
+            <Toolbar>
+                <SearchField liveChange="handleSearch"
+                            width="100%" />
+            </Toolbar>
+        </subHeader>
+        <List   id="idProductList"
+                items="{
+                           path: '/Product',
+                           sorter: {
+                                   path: 'Manufacturer/ManufacturerID',
+                                   descending: false,
+                                   group: '.grouper'
+                            },
+                            groupHeaderFactory: '.getGroupHeader'
+                        }"
+                headerText="{i18n>Products}">
+            <items>
+                <ObjectListItem title="{Description}"
+                                type="Active"
+                                press="handleListItemPress"
+                                number="{Disposal}"
+                                key="{ProductID}">
+                    <firstStatus>
+                        <ObjectStatus   text="{Treatment}"
+                                        state="Success" />
+                    </firstStatus>
+                    <attributes>
+                        <ObjectAttribute text="{Manufacturer/Name}, {Manufacturer/City}" />
+                    </attributes>
+                </ObjectListItem>
+            </items>
+        </List>
+    </Page>
+</mvc:View>

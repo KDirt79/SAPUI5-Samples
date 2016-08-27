@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?><edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="Products">
+            <EntityType Name="Product">
+                <Key>
+                    <PropertyRef Name="ProductID"/>
+                </Key>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Description" Type="Edm.String"/>
+                <Property Name="ApplicationID" Type="Edm.String"/>
+                <Property Name="GroupID" Type="Edm.String"/>
+                <Property Name="Manufacturer" Type="Edm.String"/>
+                <NavigationProperty FromRole="From_Product" Name="TradeNamesSet" Relationship="Products.ProductTradeNames" ToRole="To_TradeNames"/>
+                <NavigationProperty FromRole="From_Product" Name="ProductNamesSet" Relationship="Products.ProductProductNames" ToRole="To_ProductNames"/>
+                <NavigationProperty FromRole="From_Product" Name="DatasheetsSet" Relationship="Products.ProductDatasheets" ToRole="To_Datasheets"/>
+                <NavigationProperty FromRole="From_Product" Name="CASNumbersSet" Relationship="Products.ProductCASNumbers" ToRole="To_CASNumbers"/>
+                <NavigationProperty FromRole="From_Product" Name="PictogramsSet" Relationship="Products.ProductPictograms" ToRole="To_Pictograms"/>
+                <NavigationProperty FromRole="From_Product" Name="SecurityPhrasesSet" Relationship="Products.ProductSecurityPhrases" ToRole="To_SecurityPhrases"/>
+                <NavigationProperty FromRole="From_Product" Name="RiskPhrasesSet" Relationship="Products.ProductRiskPhrases" ToRole="To_RiskPhrases"/>
+                <NavigationProperty FromRole="From_Product" Name="CustomerSet" Relationship="Products.ProductCustomer" ToRole="To_Customer"/>
+                <NavigationProperty FromRole="From_Product" Name="ApplicationSet" Relationship="Products.ProductApplication" ToRole="To_Application"/>
+                <NavigationProperty FromRole="From_Product" Name="GroupSet" Relationship="Products.ProductGroup" ToRole="To_Group"/>
+            </EntityType>
+            <EntityType Name="TradeNames">
+                <Key>
+                    <PropertyRef Name="ProductID"/>
+                    <PropertyRef Name="Counter"/>
+                    <PropertyRef Name="Language"/>
+                </Key>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Counter" Nullable="false" Type="Edm.String"/>
+                <Property Name="Language" Nullable="false" Type="Edm.String"/>
+                <Property Name="TradeName" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="ProductNames">
+                <Key>
+                    <PropertyRef Name="ProductID"/>
+                    <PropertyRef Name="Language"/>
+                </Key>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Language" Nullable="false" Type="Edm.String"/>
+                <Property Name="ProductName" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Datasheets">
+                <Key>
+                    <PropertyRef Name="DatasheetID"/>
+                    <PropertyRef Name="ProductID"/>
+                </Key>
+                <Property Name="DatasheetID" Nullable="false" Type="Edm.String"/>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Language" Type="Edm.String"/>
+                <Property Name="Country" Type="Edm.String"/>
+                <Property Name="IssueDate" Type="Edm.String"/>
+                <NavigationProperty FromRole="From_Datasheets" Name="DatasheetSet" Relationship="Products.DatasheetsDatasheet" ToRole="To_Datasheet"/>
+            </EntityType>
+            <EntityType Name="CASNumbers">
+                <Key>
+                    <PropertyRef Name="ProductID"/>
+                    <PropertyRef Name="CASNumber"/>
+                </Key>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="CASNumber" Nullable="false" Type="Edm.String"/>
+                <Property Name="Description" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Pictograms">
+                <Key>
+                    <PropertyRef Name="ProductID"/>
+                    <PropertyRef Name="PictogramID"/>
+                </Key>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="PictogramID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Description" Type="Edm.String"/>
+                <NavigationProperty FromRole="From_Pictograms" Name="PictogramSet" Relationship="Products.PictogramsPictogram" ToRole="To_Pictogram"/>
+            </EntityType>
+            <EntityType Name="SecurityPhrases">
+                <Key>
+                    <PropertyRef Name="ProductID"/>
+                    <PropertyRef Name="SecurityPhrasesID"/>
+                </Key>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="SecurityPhrasesID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Text" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="RiskPhrases">
+                <Key>
+                    <PropertyRef Name="ProductID"/>
+                    <PropertyRef Name="RiskPhrasesID"/>
+                </Key>
+                <Property Name="ProductID" Nullable="false" Type="Edm.String"/>
+                <Property Name="RiskPhrasesID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Text" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Customer">
+                <Key>
+                    <PropertyRef Name="CustomerID"/>
+                </Key>
+                <Property Name="CustomerID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Name" Type="Edm.String"/>
+                <Property Name="City" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Pictogram">
+                <Key>
+                    <PropertyRef Name="PictogramID"/>
+                </Key>
+                <Property Name="PictogramID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Picture" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Datasheet">
+                <Key>
+                    <PropertyRef Name="DatasheetID"/>
+                </Key>
+                <Property Name="DatasheetID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Document" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Application">
+                <Key>
+                    <PropertyRef Name="ApplicationID"/>
+                    <PropertyRef Name="Language"/>
+                </Key>
+                <Property Name="ApplicationID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Language" Nullable="false" Type="Edm.String"/>
+                <Property Name="Description" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="Group">
+                <Key>
+                    <PropertyRef Name="GroupID"/>
+                    <PropertyRef Name="Language"/>
+                </Key>
+                <Property Name="GroupID" Nullable="false" Type="Edm.String"/>
+                <Property Name="Language" Nullable="false" Type="Edm.String"/>
+                <Property Name="Description" Type="Edm.String"/>
+            </EntityType>
+            <Association Name="ProductTradeNames">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_TradeNames" Type="Products.TradeNames"/>
+            </Association>
+            <Association Name="ProductProductNames">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_ProductNames" Type="Products.ProductNames"/>
+            </Association>
+            <Association Name="ProductDatasheets">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_Datasheets" Type="Products.Datasheets"/>
+            </Association>
+            <Association Name="ProductCASNumbers">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_CASNumbers" Type="Products.CASNumbers"/>
+            </Association>
+            <Association Name="ProductPictograms">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_Pictograms" Type="Products.Pictograms"/>
+            </Association>
+            <Association Name="ProductSecurityPhrases">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_SecurityPhrases" Type="Products.SecurityPhrases"/>
+            </Association>
+            <Association Name="ProductRiskPhrases">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_RiskPhrases" Type="Products.RiskPhrases"/>
+            </Association>
+            <Association Name="ProductCustomer">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_Customer" Type="Products.Customer"/>
+            </Association>
+            <Association Name="PictogramsPictogram">
+                <End Multiplicity="1" Role="From_Pictograms" Type="Products.Pictograms"/>
+                <End Multiplicity="*" Role="To_Pictogram" Type="Products.Pictogram"/>
+            </Association>
+            <Association Name="DatasheetsDatasheet">
+                <End Multiplicity="1" Role="From_Datasheets" Type="Products.Datasheets"/>
+                <End Multiplicity="*" Role="To_Datasheet" Type="Products.Datasheet"/>
+            </Association>
+            <Association Name="ProductApplication">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_Application" Type="Products.Application"/>
+            </Association>
+            <Association Name="ProductGroup">
+                <End Multiplicity="1" Role="From_Product" Type="Products.Product"/>
+                <End Multiplicity="*" Role="To_Group" Type="Products.Group"/>
+            </Association>
+            <EntityContainer Name="default" m:IsDefaultEntityContainer="true">
+                <EntitySet EntityType="Products.Product" Name="ProductSet"/>
+                <EntitySet EntityType="Products.TradeNames" Name="TradeNamesSet"/>
+                <EntitySet EntityType="Products.ProductNames" Name="ProductNamesSet"/>
+                <EntitySet EntityType="Products.Datasheets" Name="DatasheetsSet"/>
+                <EntitySet EntityType="Products.CASNumbers" Name="CASNumbersSet"/>
+                <EntitySet EntityType="Products.Pictograms" Name="PictogramsSet"/>
+                <EntitySet EntityType="Products.SecurityPhrases" Name="SecurityPhrasesSet"/>
+                <EntitySet EntityType="Products.RiskPhrases" Name="RiskPhrasesSet"/>
+                <EntitySet EntityType="Products.Customer" Name="CustomerSet"/>
+                <EntitySet EntityType="Products.Pictogram" Name="PictogramSet"/>
+                <EntitySet EntityType="Products.Datasheet" Name="DatasheetSet"/>
+                <EntitySet EntityType="Products.Application" Name="ApplicationSet"/>
+                <EntitySet EntityType="Products.Group" Name="GroupSet"/>
+                <AssociationSet Association="Products.ProductTradeNames" Name="ProductTradeNamesSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="TradeNamesSet" Role="To_TradeNames"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductProductNames" Name="ProductProductNamesSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="ProductNamesSet" Role="To_ProductNames"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductDatasheets" Name="ProductDatasheetsSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="DatasheetsSet" Role="To_Datasheets"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductCASNumbers" Name="ProductCASNumbersSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="CASNumbersSet" Role="To_CASNumbers"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductPictograms" Name="ProductPictogramsSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="PictogramsSet" Role="To_Pictograms"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductSecurityPhrases" Name="ProductSecurityPhrasesSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="SecurityPhrasesSet" Role="To_SecurityPhrases"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductRiskPhrases" Name="ProductRiskPhrasesSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="RiskPhrasesSet" Role="To_RiskPhrases"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductCustomer" Name="ProductCustomerSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="CustomerSet" Role="To_Customer"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.PictogramsPictogram" Name="PictogramsPictogramSet">
+                    <End EntitySet="PictogramsSet" Role="From_Pictograms"/>
+                    <End EntitySet="PictogramSet" Role="To_Pictogram"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.DatasheetsDatasheet" Name="DatasheetsDatasheetSet">
+                    <End EntitySet="DatasheetsSet" Role="From_Datasheets"/>
+                    <End EntitySet="DatasheetSet" Role="To_Datasheet"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductApplication" Name="ProductApplicationSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="ApplicationSet" Role="To_Application"/>
+                </AssociationSet>
+                <AssociationSet Association="Products.ProductGroup" Name="ProductGroupSet">
+                    <End EntitySet="ProductSet" Role="From_Product"/>
+                    <End EntitySet="GroupSet" Role="To_Group"/>
+                </AssociationSet>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

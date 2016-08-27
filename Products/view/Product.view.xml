@@ -1,0 +1,280 @@
+<mvc:View
+        controllerName="com.fahmaih.samples.products.controller.Product"
+        xmlns:mvc="sap.ui.core.mvc"
+		xmlns:m="sap.m"
+        xmlns:core="sap.ui.core"
+        xmlns:f="sap.ui.layout.form"
+        xmlns:l="sap.ui.layout"
+        xmlns="sap.uxap">
+    <m:Page   title="{i18n>Product} {Description}"
+            class="sapUiContentPadding"
+            showNavButton="true"
+            navButtonPress="handleNavBack">
+        <ObjectPageLayout id="ObjectPageLayout">
+            <headerTitle>
+                <ObjectPageHeader objectTitle="{Description}"/>
+            </headerTitle>
+            <headerContent>
+                <m:ObjectAttribute title="" text="{Manufacturer/Name}, {Manufacturer/City}"/>
+            </headerContent>
+            <sections>
+                <ObjectPageSection title="{i18n>Section1}">
+                    <subSections>
+                        <ObjectPageSubSection title="{i18n>Subsection1.1}"
+										      mode="Expanded">
+                            <blocks>
+                                <f:SimpleForm layout="ResponsiveGridLayout">
+                                    <m:Label text="{i18n>TradeName}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{Description}"/>
+                                    </l:VerticalLayout>
+                                    <m:Label text="{i18n>Application}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{Application/Description}"/>
+                                    </l:VerticalLayout>
+                                </f:SimpleForm>
+                            </blocks>
+                        </ObjectPageSubSection>
+                        <ObjectPageSubSection title="{i18n>Subsection1.2}">
+                            <blocks>
+                                <f:SimpleForm layout="ResponsiveGridLayout">
+                                    <m:Label text="{i18n>Address}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{Manufacturer/Name}"/>
+                                        <m:Text text="{Manufacturer/Street}"/>
+                                        <m:Text text="{Manufacturer/PostCode} {Manufacturer/City}"/>
+                                        <m:Text text="{path: 'Manufacturer/Country', formatter: 'com.fahmaih.samples.products.util.Formatter.countryCode'}" />
+                                    </l:VerticalLayout>
+
+                                    <m:Label text="{i18n>Phone}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{Manufacturer/Phone}"/>
+                                    </l:VerticalLayout>
+                                    <m:Label text="{i18n>Fax}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{Manufacturer/Fax}"/>
+                                    </l:VerticalLayout>
+                                    <m:Label text="{i18n>Mail}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{Manufacturer/Mail}"/>
+                                    </l:VerticalLayout>
+                                    <m:Label text="{i18n>Web}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{Manufacturer/URL}"/>
+                                    </l:VerticalLayout>
+                                </f:SimpleForm>
+                            </blocks>
+                        </ObjectPageSubSection>
+                    </subSections>
+                </ObjectPageSection>
+                <ObjectPageSection title="{i18n>Section2}">
+                    <subSections>
+                        <ObjectPageSubSection title="{i18n>Subsection2.1}"
+                                               mode="Collapsed">
+                            <blocks>
+                                <m:FlexBox direction="Column"
+                                            alignItems="Start">
+                                    <m:items>
+                                        <m:Text text="{Characterisation-1}" />
+                                        <m:Text text="{Characterisation-2}" />
+                                    </m:items>
+                                </m:FlexBox>
+                            </blocks>
+                        </ObjectPageSubSection>
+                        <ObjectPageSubSection title="{i18n>Subsection2.2}"
+                                               mode="Collapsed">
+                            <blocks>
+                                <m:Table id="idCasNumbers"
+                                        inset="false"
+                                        items="{CAS-Numbers}">
+                                    <m:columns>
+                                        <m:Column width="5rem">
+                                            <m:Text text="{i18n>CAS-Number}" />
+                                        </m:Column>
+                                        <m:Column width="15rem">
+                                            <m:Text text="{i18n>Description}" />
+                                        </m:Column>
+                                        <m:Column width="5rem">
+                                            <m:Text text="{i18n>Concentration}" />
+                                        </m:Column>
+                                    </m:columns>
+                                    <m:items>
+                                        <m:ColumnListItem>
+                                            <m:cells>
+                                                <m:Text text="{CAS-Number}" />
+                                                <m:Text text="{Description}" />
+                                                <m:Text text="{Concentration}" />
+                                            </m:cells>
+                                        </m:ColumnListItem>
+                                    </m:items>
+                                </m:Table>
+                            </blocks>
+                        </ObjectPageSubSection>
+                    </subSections>
+                </ObjectPageSection>
+                <ObjectPageSection title="{i18n>Section3}">
+                    <subSections>
+                        <ObjectPageSubSection title="{i18n>Subsection3.1}"
+                                               mode="Collapsed">
+                            <blocks>
+                                <l:VerticalLayout class="sapUiContentPadding"
+                                                    width="100%">
+                                    <l:content>
+                                        <m:HBox items="{HazardsIdentification/Pictograms}">
+                                            <m:Image src="{img}"
+                                                       width="120px">
+                                                <m:layoutData>
+                                                    <m:FlexItemData growFactor="1" />
+                                                </m:layoutData>
+                                            </m:Image>
+                                        </m:HBox>
+                                        <f:SimpleForm layout="ResponsiveGridLayout">
+                                            <m:Label text="{i18n>SignalWord}"/>
+                                            <l:VerticalLayout>
+                                                <m:Text text="{HazardsIdentification/Signalword}" />
+                                            </l:VerticalLayout>
+                                        </f:SimpleForm>
+                                    </l:content>
+                                </l:VerticalLayout>
+                            </blocks>
+                        </ObjectPageSubSection>
+                        <ObjectPageSubSection title="{i18n>Subsection3.2}"
+                                               mode="Collapsed">
+                            <blocks>
+                                <m:Table id="idStatements"
+                                        inset="false"
+                                        items="{ path: 'Statements',
+                                                 sorter: {
+                                                     path: 'Type',
+                                                     descending: false,
+                                                     group: '.grouper'
+                                                 },
+                                                 groupHeaderFactory: '.getGroupHeader'
+                                            }">
+                                    <m:columns>
+                                        <m:Column width="3rem">
+                                            <m:Text text="{i18n>Number}" />
+                                        </m:Column>
+                                        <m:Column width="10rem">
+                                            <m:Text text="{i18n>Text}" />
+                                        </m:Column>
+                                    </m:columns>
+                                    <m:items>
+                                        <m:ColumnListItem>
+                                            <m:cells>
+                                                <m:Text text="{Number}" />
+                                                <m:Text text="{Text}" />
+                                            </m:cells>
+                                        </m:ColumnListItem>
+                                    </m:items>
+                                </m:Table>
+                            </blocks>
+                        </ObjectPageSubSection>
+                        <ObjectPageSubSection title="{i18n>Subsection3.3}">
+                            <blocks>
+                                <m:Table id="idCategorisation"
+                                        inset="false"
+                                        items="{Hazard-Categorisation}">
+                                    <m:columns>
+                                        <m:Column width="5rem">
+                                            <m:Text text="{i18n>HazardClass}" />
+                                        </m:Column>
+                                        <m:Column width="3rem">
+                                            <m:Text text="{i18n>HazardCategory}" />
+                                        </m:Column>
+                                    </m:columns>
+                                    <m:items>
+                                        <m:ColumnListItem>
+                                            <m:cells>
+                                                <m:Text text="{HazardClass}" />
+                                                <m:Text text="{HazardCategory}" />
+                                            </m:cells>
+                                        </m:ColumnListItem>
+                                    </m:items>
+                                </m:Table>
+                            </blocks>
+                        </ObjectPageSubSection>
+                    </subSections>
+                </ObjectPageSection>
+                <ObjectPageSection title="{i18n>Section4}">
+                    <subSections>
+                        <ObjectPageSubSection title="{i18n>Subsection4.1}"
+                                               mode="Collapsed">
+                            <blocks>
+                                <f:SimpleForm layout="ResponsiveGridLayout">
+                                    <m:Label text="{i18n>UN-Number}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{ADR/UN-Number}" />
+                                    </l:VerticalLayout>
+                                    <m:Label text="{i18n>Description}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{ADR/Description}" />
+                                    </l:VerticalLayout>
+                                    <m:Label text="{i18n>DangerClass}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{ADR/Class}" />
+                                    </l:VerticalLayout>
+                                    <m:Label text="{i18n>PackingGroup}"/>
+                                    <l:VerticalLayout>
+                                        <m:Text text="{ADR/PackingGroup}" />
+                                    </l:VerticalLayout>
+                                </f:SimpleForm>
+                            </blocks>
+                        </ObjectPageSubSection>
+                        <ObjectPageSubSection title="{i18n>Subsection4.2}"
+                                               mode="Collapsed">
+                            <blocks>
+                                <m:Label text="{i18n>NoData}" />
+                            </blocks>
+                        </ObjectPageSubSection>
+                    </subSections>
+                </ObjectPageSection>
+                <ObjectPageSection title="{i18n>Section5}">
+                    <subSections>
+					    <ObjectPageSubSection title=" ">
+						    <blocks>
+                                <m:VBox>
+                                <m:MessageStrip text="{MSDS/Message}"
+				                                type="{MSDS/Type}"
+				                                showIcon="true"
+				                                showCloseButton="false"
+				                                class="sapUiMediumMarginBottom" />
+				                <m:Table id="idMSDS"
+				                        inset="false"
+				                        items="{MSDS/Sheets}"
+				                        width="100%"
+				                        itemPress="handleItemPress">
+				                    <m:columns>
+				                        <m:Column>
+				                            <m:Text text="{i18n>Language}" />
+				                        </m:Column>
+				                        <m:Column>
+				                            <m:Text text="{i18n>Country}" />
+				                        </m:Column>
+				                        <m:Column>
+				                            <m:Text text="{i18n>ReleaseDate}" />
+				                        </m:Column>
+				                        <m:Column>
+				                            <m:Text text="{i18n>Link}" />
+				                        </m:Column>
+				                    </m:columns>
+				                    <m:items>
+				                        <m:ColumnListItem type="Navigation">
+				                            <m:cells>
+				                                <m:Text text="{path: 'Language', formatter:'com.fahmaih.samples.products.util.Formatter.languageCode' }" />
+				                                <m:Text text="{path: 'Country', formatter:'com.fahmaih.samples.products.util.Formatter.countryCode'}" />
+				                                <m:Text text="{ReleaseDate}" />
+				                                <core:Icon src="sap-icon://pdf-attachment" />
+				                            </m:cells>
+				                        </m:ColumnListItem>
+				                    </m:items>
+				                </m:Table>
+				                </m:VBox>
+						    </blocks>
+					    </ObjectPageSubSection>
+				    </subSections>
+                </ObjectPageSection>
+            </sections>
+        </ObjectPageLayout>
+    </m:Page>
+</mvc:View>

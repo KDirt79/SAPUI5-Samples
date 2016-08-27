@@ -1,0 +1,957 @@
+{
+    "Product" : [
+        {
+            "ProductID": "0000001000",
+            "Index": 0,
+            "Description": "GLYPHOSAT-BERGHOFF®",
+            "Application": {
+                "ApplicationID" : "0001",
+                "Description" : "Pflanzenschutzmittel/Herbizid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID": "0000000001",
+                "Name": "Caspar Berghoff KG",
+                "Street": "Möhnestraße 203",
+                "City": "Warstein - Allagen",
+                "PostCode": "59581",
+                "Country": "DE",
+                "Phone": "02925 / 97040",
+                "Fax": "02925 / 970420",
+                "Mail": "webmaster@berghoff-online.de",
+                "URL": "http://www.berghoff-online.de"
+            },
+            "Characterisation-1": "-",
+            "Characterisation-2": "-",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "38641-94-0",
+                    "Description": "Isopropylammonium-Salz",
+                    "Concentration": "41,5%"
+                },
+                {
+                    "CAS-Number": "61791-26-2",
+                    "Description": "Talgfettaminoxethylat",
+                    "Concentration": "15,5%"
+                },
+                {
+                    "CAS-Number": "7732-18-5",
+                    "Description": "Wasser",
+                    "Concentration": "43%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [
+                    {
+                        "PictogramID": "GHS07",
+                        "Description": "dickes Ausrufezeichensymbol",
+                        "img": "pictograms/harmful.png"
+                    },
+                    {
+                        "PictogramID": "GHS09",
+                        "Description": "Umwelt",
+                        "img": "pictograms/environmental_hazard.png"
+                    }
+                ],
+                "Signalword": "GEFAHR"
+            },
+            "Hazard-Categorisation" : [],
+            "Statements": [
+                {
+                    "Type": "R",
+                    "Number": "R36",
+                    "Text": "Reizt die Augen."
+                },
+                {
+                    "Type": "R",
+                    "Number": "R51/R53",
+                    "Text": "Giftig für Wasserorganismen, kann in Gewässern längerfristig schädliche Wirkungen haben."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S2",
+                    "Text": "Darf nicht in die Hände von Kindern gelangen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S13",
+                    "Text": "Von Nahrungsmitteln, Getränken und Futtermitteln fernhalten."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S20/S21",
+                    "Text": "Bei der Arbeit nicht essen, trinken oder rauchen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S25",
+                    "Text": "Berührung mit den Augen vermeiden."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S26",
+                    "Text": "Bei Berührung mit den Augen sofort gründlich mit Wasser abspülen und Arzt konsultieren."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S35",
+                    "Text": "Abfälle und Behälter müssen in gesicherter Weise beseitigt werden."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S46",
+                    "Text": "Bei Verschlucken sofort ärztlichen Rat einholen und Verpackung oder Etikett vorzeigen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S57",
+                    "Text": "Zur Vermeidung einer Kontamination der Umwelt geeigneten Behälter verwenden."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt älter als zwei Jahre",
+                "Type": "Warning",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "17.03.2004",
+                        "path": "msds/0000001000-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "UN 3082",
+                "Description": "UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N.A.G.(aromatische Kohlenwasserstoffe)",
+                "Class": "9",
+                "PackingGroup": "III"
+            },
+            "Treatment" : "C",
+            "Disposal" : "ST"
+        },
+        {
+            "ProductID" : "0000001001",
+            "Index": 1,
+            "Description" : "Roundup® PowerFlex",
+            "Application": {
+                "ApplicationID" : "0001",
+                "Description" : "Pflanzenschutzmittel/Herbizid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID" : "0000000002",
+                "Name" : "MONSANTO Europe S.A./N.V.",
+                "Street" : "Haven 627, Scheldelaan 460",
+                "City" : "Antwerpen",
+                "PostCode": "2040",
+                "Country" : "BE",
+                "Phone": "+32 (0)3 568 51 11",
+                "Fax": "+32 (0)3 568 50 90",
+                "Mail": "safety.datasheet@monsanto.com",
+                "URL": ""
+            },
+            "Characterisation-1": "Kaliumsalz von N-(phosphonomethyl)glycin",
+            "Characterisation-2": "Kaliumsalz von Glyphosat",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "70901-12-1",
+                    "Description": "Kaliumsalz von Glyphosat",
+                    "Concentration": "44%"
+                },
+                {
+                    "CAS-Number": "68515-73-1",
+                    "Description": "Alkylpolyglycoside",
+                    "Concentration": "<20%"
+                },
+                {
+                    "CAS-Number": "226563-63-9",
+                    "Description": "Nitroryl",
+                    "Concentration": "<3%"
+                },
+                {
+                    "CAS-Number": "7732-18-5",
+                    "Description": "Wasser",
+                    "Concentration": ">33%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [],
+                "Signalword": ""
+            },
+            "Hazard-Categorisation" : [],
+            "Statements": [
+                {
+                    "Type": "R",
+                    "Number": "R36",
+                    "Text": "Reizt die Augen."
+                },
+                {
+                    "Type": "R",
+                    "Number": "R52/R53",
+                    "Text": "Giftig für Wasserorganismen, kann in Gewässern längerfristig schädliche Wirkungen haben."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S2",
+                    "Text": "Darf nicht in die Hände von Kindern gelangen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S13",
+                    "Text": "Von Nahrungsmitteln, Getränken und Futtermitteln fernhalten."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S20/S21",
+                    "Text": "Bei der Arbeit nicht essen, trinken oder rauchen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S24",
+                    "Text": "Berührung mit der Haut vermeiden."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S29",
+                    "Text": "NICHT in die Kanalisation gelangen lassen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S35",
+                    "Text": "Abfälle und Behälter müssen in gesicherter Weise beseitigt werden."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S36/S37",
+                    "Text": "Bei der Arbeit geeignete Schutzhandschuhe und Schutzkleidung tragen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S46",
+                    "Text": "Bei Verschlucken sofort ärztlichen Rat einholen und Verpackung oder Etikett vorzeigen."
+                },
+                {
+                    "Type": "S",
+                    "Number": "S57",
+                    "Text": "Zur Vermeidung einer Kontamination der Umwelt geeigneten Behälter verwenden."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P234",
+                    "Text": "Nur im Originalbehälter aufbewahren."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P101",
+                    "Text": "Ist ärztlicher Rat erforderlich, Verpackung oder Kennzeichnungsetikett bereithalten."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P102",
+                    "Text": "Darf nicht in die Hände von Kindern gelangen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P264",
+                    "Text": "Nach Gebrauch Hände gründlich waschen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P270",
+                    "Text": "Bei Gebrauch nicht essen, trinken oder rauchen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P280",
+                    "Text": "Schutzhandschuhe/Schutzkleidung/Augenschutz/Gesichtsschutz tragen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P501",
+                    "Text": "Inhalt/Behälter einer ordnungsgemäßen Entsorgung zuführen."
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH401",
+                    "Text": "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH208-0156",
+                    "Text": "Enthält Formaldehyd. Kann allergische Reaktionen hervorrufen."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt vorhanden",
+                "Type": "Success",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "12.12.2014",
+                        "path": "msds/0000001001-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "",
+                "Description": "",
+                "Class": "",
+                "PackingGroup": ""
+            },
+            "Treatment" : "C",
+            "Disposal" : "ST"
+        },
+        {
+            "ProductID" : "0000001002",
+            "Index": 2,
+            "Description" : "EFFIGO™ Herbicide",
+            "Application": {
+                "ApplicationID" : "0001",
+                "Description" : "Pflanzenschutzmittel/Herbizid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID" : "0000000003",
+                "Name" : "Dow AgroSciences GmbH",
+                "Street": "Truderinger Strasse 15",
+                "City" : "München",
+                "PostCode": "81677",
+                "Country" : "DE",
+                "Phone": "0049 89 4 55 33 0",
+                "Fax": "",
+                "Mail": "SDSQuestion@dow.com",
+                "URL": ""
+            },
+            "Characterisation-1": "-",
+            "Characterisation-2": "-",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "57754-85-5",
+                    "Description": "Clopyralidmonoethanolaminsalz",
+                    "Concentration": "30,2%"
+                },
+                {
+                    "CAS-Number": "55871-00-6",
+                    "Description": "Piclorammonoethanolaminsalz",
+                    "Concentration": "7,2%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [],
+                "Signalword": ""
+            },
+            "Hazard-Categorisation" : [],
+            "Statements": [
+                {
+                    "Type": "U",
+                    "Number": "EUH401",
+                    "Text": "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt vorhanden",
+                "Type": "Success",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "25.11.2015",
+                        "path": "msds/0000001002-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "",
+                "Description": "",
+                "Class": "",
+                "PackingGroup": ""
+            },
+            "Treatment" : "C",
+            "Disposal" : "ST"
+        },
+        {
+            "ProductID" : "0000001003",
+            "Index": 3,
+            "Description" : "Electis",
+            "Application": {
+                "ApplicationID" : "0002",
+                "Description" : "Fungizid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID" : "0000000003",
+                "Name" : "Dow AgroSciences GmbH",
+                "Street": "Truderinger Strasse 15",
+                "City" : "München",
+                "PostCode": "81677",
+                "Country" : "DE",
+                "Phone": "089/45533-0",
+                "Fax": "089/45533-111",
+                "Mail": "",
+                "URL": ""
+            },
+            "Characterisation-1": "-",
+            "Characterisation-2": "-",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "8018-01-7",
+                    "Description": "Mancozeb",
+                    "Concentration": "67-70%"
+                },
+                {
+                    "CAS-Number": "156052-68-5",
+                    "Description": "Zoxamide",
+                    "Concentration": "8-9%"
+                },
+                {
+                    "CAS-Number": "100-97-0",
+                    "Description": "Hexamethylenetetramine",
+                    "Concentration": "0,9%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [
+                    {
+                        "PictogramID": "GHS07",
+                        "Description": "dickes Ausrufezeichensymbol",
+                        "img": "pictograms/harmful.png"
+                    },
+                    {
+                        "PictogramID": "GHS09",
+                        "Description": "Umwelt",
+                        "img": "pictograms/environmental_hazard.png"
+                    }
+                ],
+                "Signalword": ""
+            },
+            "Hazard-Categorisation" : [],
+            "Statements": [
+                {
+                    "Type": "R",
+                    "Number": "R11",
+                    "Text": "Leichtentzündlich."
+                },
+                {
+                    "Type": "R",
+                    "Number": "R37",
+                    "Text": "Reizt die Atmungsorgane."
+                },
+                {
+                    "Type": "R",
+                    "Number": "R43",
+                    "Text": "Sensibilisierung durch Hautkontakt möglich."
+                },
+                {
+                    "Type": "R50",
+                    "Number": "R50",
+                    "Text": "Sehr giftig für Wasserorganismen."
+                },
+                {
+                    "Type": "R",
+                    "Number": "R53",
+                    "Text": "Kann in Gewässern längerfristig schädliche Wirkungen haben."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt älter als zwei Jahre",
+                "Type": "Warning",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "20.09.2006",
+                        "path": "msds/0000001003-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "UN 3077",
+                "Description": "UMWELTGEFÄHRDENDER STOFF, FEST, N.A.G. (Mancozeb)",
+                "Class": "9",
+                "PackingGroup": "III"
+            },
+            "Treatment" : "C",
+            "Disposal" : "ST"
+        },
+        {
+            "ProductID" : "0000001004",
+            "Index": 4,
+            "Description" : "Nando 500 SC",
+            "Application": {
+                "ApplicationID" : "0001",
+                "Description" : "Pflanzenschutzmittel/Herbizid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID" : "0000000004",
+                "Name" : "NuFarm Deutschland GmbH",
+                "Street": "Im Media-Park 4e",
+                "City" : "Köln",
+                "PostCode": "50670",
+                "Country" : "De",
+                "Phone": "+49/221/179179-24",
+                "Fax": "+49/221/179179-55",
+                "Mail": "Dagmar.Heibertshausen@de.nufarm.com",
+                "URL": ""
+            },
+            "Characterisation-1": "Suspensionskonzentrat (SC)",
+            "Characterisation-2": "Fluazinam 500g/l",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "79622-59-6",
+                    "Description": "Fluazinam",
+                    "Concentration": "40%"
+                },
+                {
+                    "CAS-Number": "119432-41-6",
+                    "Description": "Ethoxyliertes Polyarylphenolsulfat, Ammonium-Salz",
+                    "Concentration": "1-5%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [
+                    {
+                        "PictogramID": "GHS07",
+                        "Description": "dickes Ausrufezeichensymbol",
+                        "img": "pictograms/harmful.png"
+                    },
+                    {
+                        "PictogramID": "GHS08",
+                        "Description": "Gesundheitsgefahr",
+                        "img": "pictograms/health_hazard.png"
+                    },
+                    {
+                        "PictogramID": "GHS09",
+                        "Description": "Umwelt",
+                        "img": "pictograms/environmental_hazard.png"
+                    }
+                ],
+                "Signalword": "ACHTUNG"
+            },
+            "Hazard-Categorisation" : [],
+            "Statements": [
+                {
+                    "Type": "H",
+                    "Number": "H317",
+                    "Text": "Kann allergische Hautreaktionen verursachen."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H361d",
+                    "Text": "Kann vermutlich das Kind im Mutterleib schädigen."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H410",
+                    "Text": "Sehr giftig für Wasserorganismen, mit langfristiger Wirkung"
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH401",
+                    "Text": "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P101",
+                    "Text": "Ist ärztlicher Rat erforderlich, Verpackung oder Kennzeichnungsetikett bereithalten."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P102",
+                    "Text": "Darf nicht in die Hände von Kindern gelangen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P261",
+                    "Text": "Einatmen von Staub/Rauch/Gas/Nebel/Dampf/Aerosol vermeiden."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P264",
+                    "Text": "Nach Gebrauch Hände gründlich waschen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P270",
+                    "Text": "Bei Gebrauch nicht essen, trinken oder rauchen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P272",
+                    "Text": "Kontaminierte Arbeitskleidung nicht außerhalb des Arbeitsplatzes tragen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P273",
+                    "Text": "Freisetzung in die Umwelt vermeiden."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P280",
+                    "Text": "Schutzhandschuhe/Schutzkleidung/Augenschutz/Gesichtsschutz tragen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P391",
+                    "Text": "Verschüttete Mengen aufnehmen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P501",
+                    "Text": "Inhalt/Behälter einer ordnungsgemäßen Entsorgungzuführen."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt älter als zwei Jahre",
+                "Type": "Warning",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "14.07.2014",
+                        "path": "msds/0000001004-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "UN 3082",
+                "Description": "Umweltgefährdender Stoff, flüssig, n.a.g. (Fluazinam)",
+                "Class": "9",
+                "PackingGroup": "III"
+            },
+            "Treatment" : "C",
+            "Disposal" : "ST"
+        },
+        {
+            "ProductID" : "0000001005",
+            "Index": 5,
+            "Description" : "NEMATHORIN 10G",
+            "Application": {
+                "ApplicationID" : "0003",
+                "Description" : "Nematozid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID" : "0000000005",
+                "Name" : "Syngenta Agro GmbH",
+                "Street": "Am Technologiepark 1",
+                "City" : "Maintal",
+                "PostCode": "63462",
+                "Country" : "DE",
+                "Phone": "+49 (0)61 8190810",
+                "Fax": "+49 (0)6181 9081319",
+                "Mail": "registrierung.deutschland@syngenta.com",
+                "URL": ""
+            },
+            "Characterisation-1": "-",
+            "Characterisation-2": "-",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "98886-44-3",
+                    "Description": "Fosthiazat",
+                    "Concentration": "10%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [
+                    {
+                        "PictogramID": "GHS06",
+                        "Description": "Totenkopf mit Knochen",
+                        "img": "pictograms/toxic.png"
+                    },
+                    {
+                        "PictogramID": "GHS09",
+                        "Description": "Umwelt",
+                        "img": "pictograms/environmental_hazard.png"
+                    }
+                ],
+                "Signalword": "GEFAHR"
+            },
+            "Hazard-Categorisation" : [
+                {
+                    "HazardClass": "Akute Toxizität (Oral)",
+                    "HazardCategory": "Kategorie 3"
+                },
+                {
+                    "HazardClass": "Chronische aquatische Toxizität",
+                    "HazardCategory": "Kategorie 2"
+                }
+            ],
+            "Statements": [
+                {
+                    "Type": "H",
+                    "Number": "H301",
+                    "Text": "Giftig bei Verschlucken."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H411",
+                    "Text": "Giftig für Wasserorganismen, mit langfristiger Wirkung."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P102",
+                    "Text": "Darf nicht in die Hände von Kindern gelangen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P264",
+                    "Text": "Nach Gebrauch Hände gründlich waschen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P270",
+                    "Text": "Bei Gebrauch nicht essen, trinken oder rauchen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P301+P310",
+                    "Text": "BEI VERSCHLUCKEN: Sofort GIFTINFORMATIONSZENTRUM/ Arzt anrufen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P330",
+                    "Text": "Mund ausspülen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "405",
+                    "Text": "Unter Verschluss aufbewahren."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P391",
+                    "Text": "Verschüttete Mengen aufnehmen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P501",
+                    "Text": "Inhalt/Behälter einer ordnungsgemäßen Entsorgungzuführen."
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH401",
+                    "Text": "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH208",
+                    "Text": "Enthält fosthiazate. Kann allergische Reaktionenhervorrufen."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt vorhanden",
+                "Type": "Success",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "29.10.2015",
+                        "path": "msds/0000001005-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "UN 2783",
+                "Description": "ORGANOPHOSPHOR-PESTIZID, FEST, GIFTIG (FOSTHIAZATE)",
+                "Class": "6.1",
+                "PackingGroup": "III"
+            },
+            "Treatment" : "E",
+            "Disposal" : "ST"
+        },
+        {
+            "ProductID" : "0000001006",
+            "Index": 6,
+            "Description" : "SIMPLEX™ Herbicide",
+            "Application": {
+                "ApplicationID" : "0001",
+                "Description" : "Pflanzenschutzmittel/Herbizid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID" : "0000000003",
+                "Name" : "Dow AgroSciences GmbH",
+                "Street": "Truderinger Strasse 15",
+                "City" : "München",
+                "PostCode": "81677",
+                "Country" : "DE",
+                "Phone": "0049 89 4 55 33 0",
+                "Fax": "",
+                "Mail": "SDSQuestion@dow.com",
+                "URL": ""
+            },
+            "Characterisation-1": "-",
+            "Characterisation-2": "-",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "81406-37-3",
+                    "Description": "Fluoroxypyrmeptyl (ISO)",
+                    "Concentration": "14,2%"
+                },
+                {
+                    "CAS-Number": "566191-87-5",
+                    "Description": "Aminopyralid-Kalium",
+                    "Concentration": "3,5%"
+                },
+                {
+                    "CAS-Number": "2634-33-5",
+                    "Description": "1,2-Benzisothiazol-3(2H)-on",
+                    "Concentration": "<0,05%"
+                },
+                {
+                    "CAS-Number": "34590-94-8",
+                    "Description": "Dipropylenglycolmonomethylether",
+                    "Concentration": ">20,0 - <30,0%"
+                },
+                {
+                    "CAS-Number": "32612-48-9",
+                    "Description": "Poly(oxy – 1,2 –ethandiyl) alpha.-sulfo-.omega.-(dodecyloxy)-Ammoniumsalz",
+                    "Concentration": "<5,0%"
+                },
+                {
+                    "CAS-Number": "107-41-5",
+                    "Description": "2-Methyl-2,4-pentandiol",
+                    "Concentration": "<5,0%"
+                },
+                {
+                    "CAS-Number": "91-20-3",
+                    "Description": "Naphthalin",
+                    "Concentration": "<1,0%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [
+                    {
+                        "PictogramID": "GHS05",
+                        "Description": "Ätzwirkung",
+                        "img": "pictograms/corrosive.png"
+                    },
+                    {
+                        "PictogramID": "GHS07",
+                        "Description": "",
+                        "img": "pictograms/harmful.png"
+                    },
+                    {
+                        "PictogramID": "GHS08",
+                        "Description": "Gesundheitsgefahr",
+                        "img": "pictograms/health_hazard.png"
+                    },
+                    {
+                        "PictogramID": "GHS09",
+                        "Description": "Umwelt",
+                        "img": "pictograms/environmental_hazard.png"
+                    }
+                ],
+                "Signalword": "GEFAHR"
+            },
+            "Hazard-Categorisation" : [
+                {
+                    "HazardClass": "Schwere Augenschädigung",
+                    "HazardCategory": "Kategorie 1"
+                },
+                {
+                    "HazardClass": "Reizwirkung auf die Haut",
+                    "HazardCategory": "Kategorie 2"
+                },
+                {
+                    "HazardClass": "Spezifische Zielorgan-Toxizität - einmalige Exposition",
+                    "HazardCategory": "Kategorie 3"
+                },
+                {
+                    "HazardClass": "Aspirationsgefahr",
+                    "HazardCategory": "Kategorie 1"
+                },
+                {
+                    "HazardClass": "Akute aquatische Toxizität",
+                    "HazardCategory": "Kategorie 1"
+                },
+                {
+                    "HazardClass": "Chronische aquatische Toxizität",
+                    "HazardCategory": "Kategorie 1"
+                }
+            ],
+            "Statements": [
+                {
+                    "Type": "H",
+                    "Number": "H315",
+                    "Text": "Verursacht Hautreizungen."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H318",
+                    "Text": "Verursacht schwere Augenschäden."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H336",
+                    "Text": "Kann Schläfrigkeit und Benommenheit verursachen."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H304",
+                    "Text": "Kann bei Verschlucken und Eindringen in die Atemwege tödlich sein."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H410",
+                    "Text": "Sehr giftig für Wasserorganismen mit langfristiger Wirkung."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P261",
+                    "Text": "Einatmen von Dampf vermeiden."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P280",
+                    "Text": "Schutzhandschuhe/ Schutzkleidung/ Augenschutz/ Gesichtsschutz tragen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P301 + P310",
+                    "Text": "BEI VERSCHLUCKEN: Sofort GIFTINFORMATIONSZENTRUM oder Arzt anrufen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P305 + P351+ P338",
+                    "Text": "BEI KONTAKT MIT DEN AUGEN: Einige Minuten lang behutsam mit Wasser spülen. Eventuell vorhandene Kontaktlinsen nach Möglichkeit entfernen. Weiter spülen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P405",
+                    "Text": "Unter Verschluss aufbewahren."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P501",
+                    "Text": "Inhalt/Behälter der Entsorgung in Übereinstimmung mit den anwendbaren Bestimmungen zuführen."
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH401",
+                    "Text": "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH208",
+                    "Text": "Enthält: 1,2-Benzisothiazol-3(2H)-on. Kann allergische Reaktionen hervorrufen."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt vorhanden",
+                "Type": "Success",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "26.11.2015",
+                        "path": "msds/0000001006-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "UN 3082",
+                "Description": "UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N.A.G.(aromatische Kohlenwasserstoffe)",
+                "Class": "9",
+                "PackingGroup": "III"
+            },
+            "Treatment" : "E",
+            "Disposal" : "ST"
+        }
+    ]
+}
