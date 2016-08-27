@@ -1,3 +1,1 @@
-SAPUI5-Samples
-
-Sample projects and tests with SAPUI5/OpenUI5
+UI5 web app for chemical products database
