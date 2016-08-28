@@ -1,0 +1,127 @@
+{
+   "Deliveries" : [
+       {
+           "DeliveryID": "1000000001",
+           "ShipPoint": {
+               "ShipPointID": "0001",
+               "Description": "Annahmestelle Entenhausen"
+           },
+           "DelivType": "INB",
+           "DelivDate": "20160902",
+           "Vendor" : {
+               "VendorID": "0000000001",
+               "Name": "Panzerknacker AG",
+               "Street": "Watschelstraße 13",
+               "PostCode": "5400",
+               "City": "Entenhausen",
+               "Country": "DE"
+           },
+           "Carrier": {
+               "CarrierID": "",
+               "Name": "",
+               "Street": "",
+               "PostCode": "",
+               "City": "",
+               "Country": ""
+           },
+           "DelivItems": [
+               {
+                   "DelivItem": "000010",
+                   "Material": "",
+                   "Batch": "",
+                   "ValType": "",
+                   "Description": "",
+                   "DelivQty": "",
+                   "BaseUom": "",
+                   "Plant": "",
+                   "StgeLoc": "",
+                   "PO-Number": "",
+                   "PO-Item": ""
+               }
+           ],
+           "TotalStatus": "A"
+       },
+       {
+           "DeliveryID": "1000000002",
+           "ShipPoint": {
+               "ShipPointID": "0001",
+               "Description": "Annahmestelle Entenhausen"
+           },
+           "DelivType": "INB",
+           "DelivDate": "20160903",
+           "Vendor" : {
+               "VendorID": "Lieferant 2",
+               "Name": "Dagobert Duck KG",
+               "Street": "",
+               "PostCode": "5400",
+               "City": "Entenhausen",
+               "Country": "DE"
+           },
+           "Carrier": {
+               "CarrierID": "",
+               "Name": "",
+               "Street": "",
+               "PostCode": "",
+               "City": "",
+               "Country": ""
+           },
+           "DelivItems": [
+               {
+                   "DelivItem": "000010",
+                   "Material": "",
+                   "Batch": "",
+                   "ValType": "",
+                   "Description": "",
+                   "DelivQty": "",
+                   "BaseUom": "",
+                   "Plant": "",
+                   "StgeLoc": "",
+                   "PO-Number": "",
+                   "PO-Item": ""
+               }
+           ],
+           "TotalStatus": "A"
+       },
+       {
+           "DeliveryID": "1000000003",
+           "ShipPoint": {
+               "ShipPointID": "0001",
+               "Description": "Annahmestelle Entenhausen"
+           },
+           "DelivType": "INB",
+           "DelivDate": "20160904",
+           "Vendor" : {
+               "VendorID": "",
+               "Name": "",
+               "Street": "",
+               "PostCode": "",
+               "City": "",
+               "Country": ""
+           },
+           "Carrier": {
+               "CarrierID": "",
+               "Name": "",
+               "Street": "",
+               "PostCode": "",
+               "City": "",
+               "Country": ""
+           },
+           "DelivItems": [
+               {
+                   "DelivItem": "000010",
+                   "Material": "",
+                   "Batch": "",
+                   "ValType": "",
+                   "Description": "",
+                   "DelivQty": "",
+                   "BaseUom": "",
+                   "Plant": "",
+                   "StgeLoc": "",
+                   "PO-Number": "",
+                   "PO-Item": ""
+               }
+           ],
+           "TotalStatus": "A"
+       }
+   ]
+}

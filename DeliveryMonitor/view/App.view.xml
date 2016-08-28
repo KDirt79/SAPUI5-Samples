@@ -1,0 +1,10 @@
+<mvc:View
+        controllerName="com.fahmaih.samples.deliverymonitor.controller.App"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true"
+        xmlns="sap.m"
+        xmlns:u="sap.ui.unified"
+        height="100%">
+    <App id="idAppControl"/>
+
+</mvc:View>
