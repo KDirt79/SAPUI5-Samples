@@ -48,6 +48,9 @@
                     <Text text="{i18n>DelivNumb}" />
                 </Column>
                 <Column>
+                    <Text text="{i18n>ShipPoint}" />
+                </Column>
+                <Column>
                     <Text text="{i18n>DelivDate}" />
                 </Column>
                 <Column>
@@ -56,11 +59,15 @@
                 <Column>
                     <Text text="{i18n>Vendor}" />
                 </Column>
+                <Column>
+                    <Text text="{i18n>Status}" />
+                </Column>
             </columns>
             <items>
                 <ColumnListItem>
                     <cells>
                         <ObjectIdentifier title="{DeliveryID}" />
+                        <Text text="{ShipPoint/Name}" />
                         <Text text="{ path: 'DelivDate', 
                                         type: 'sap.ui.model.type.Date',
                                         formatOptions: {
@@ -70,6 +77,7 @@
                                     }" />
                         <Text text="{DelivType}" />
                         <Text text="{Vendor/Name}, {Vendor/City}" />
+                        <Text text="{TotalStatus}" />
                     </cells>
                 </ColumnListItem>
             </items>

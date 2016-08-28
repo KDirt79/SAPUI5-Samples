@@ -4,7 +4,7 @@
            "DeliveryID": "1000000001",
            "ShipPoint": {
                "ShipPointID": "0001",
-               "Description": "Annahmestelle Entenhausen"
+               "Name": "Annahmestelle Entenhausen"
            },
            "DelivType": "INB",
            "DelivDate": "20160902",
@@ -45,7 +45,7 @@
            "DeliveryID": "1000000002",
            "ShipPoint": {
                "ShipPointID": "0001",
-               "Description": "Annahmestelle Entenhausen"
+               "Name": "Annahmestelle Entenhausen"
            },
            "DelivType": "INB",
            "DelivDate": "20160903",
@@ -86,17 +86,17 @@
            "DeliveryID": "1000000003",
            "ShipPoint": {
                "ShipPointID": "0001",
-               "Description": "Annahmestelle Entenhausen"
+               "Name": "Annahmestelle Entenhausen"
            },
            "DelivType": "INB",
            "DelivDate": "20160904",
            "Vendor" : {
-               "VendorID": "",
-               "Name": "",
-               "Street": "",
-               "PostCode": "",
-               "City": "",
-               "Country": ""
+               "VendorID": "0000000045",
+               "Name": "Gustav Gans Ltd.",
+               "Street": "Glücksgasse 7",
+               "PostCode": "5500",
+               "City": "Gansbach",
+               "Country": "DE"
            },
            "Carrier": {
                "CarrierID": "",
