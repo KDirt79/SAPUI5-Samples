@@ -952,6 +952,165 @@
             },
             "Treatment" : "E",
             "Disposal" : "ST"
-        }
+        },
+{
+            "ProductID": "0000001007",
+            "Index": 7,
+            "Description": "ARTIST",
+            "Application": {
+                "ApplicationID" : "0001",
+                "Description" : "Pflanzenschutzmittel/Herbizid"
+            },
+            "Manufacturer" : {
+                "ManufacturerID": "0000000005",
+                "Name": "Bayer CropScience AG",
+                "Street": "Alfred-Nobel-Straße 50",
+                "City": "Monheim am Rhein",
+                "PostCode": "40789",
+                "Country": "DE",
+                "Phone": "+49(0)2173-38-3409",
+                "Fax": "+49(0)2173-38-7394",
+                "Mail": "BCS-SDS@bayer.com",
+                "URL": ""
+            },
+            "Characterisation-1": "Wasserdispergierbares Granulat (WG)",
+            "Characterisation-2": "Flufenacet 24 %, Metribuzin 17,5 %",
+            "CAS-Numbers" : [
+                {
+                    "CAS-Number": "142459-58-3",
+                    "Description": "Flufenacet",
+                    "Concentration": "24,0%"
+                },
+                {
+                    "CAS-Number": "21087-64-9",
+                    "Description": "Metribuzin",
+                    "Concentration": "17,5%"
+                },
+                {
+                    "CAS-Number": "68425-94-5",
+                    "Description": "Naphthalinsulfonsäure Alkylnaphthalinsulfonsäure Formaldehyd Kondensat, Natriumsalz",
+                    "Concentration": "1-20%"
+                },
+                {
+                    "CAS-Number": "77-92-9",
+                    "Description": "Zitronensäure",
+                    "Concentration": "1-20%"
+                },
+                {
+                    "CAS-Number": "7631-86-9",
+                    "Description": "Kieselsäuren, amorphe",
+                    "Concentration": ">1%"
+                }
+            ],
+            "HazardsIdentification" : {
+                "Pictograms" : [
+                    {
+                        "PictogramID": "GHS07",
+                        "Description": "dickes Ausrufezeichensymbol",
+                        "img": "pictograms/harmful.png"
+                    },
+                    {
+                        "PictogramID": "GHS08",
+                        "Description": "Gesundheitsgefahr",
+                        "img": "pictograms/health_hazard.png"
+                    },
+                    {
+                        "PictogramID": "GHS09",
+                        "Description": "Umwelt",
+                        "img": "pictograms/environmental_hazard.png"
+                    }
+                ],
+                "Signalword": "ACHTUNG"
+            },
+            "Hazard-Categorisation" : [
+                 {
+                    "HazardClass": "Akute Toxizität",
+                    "HazardCategory": "Kategorie 4"
+                },
+                {
+                    "HazardClass": "Spezifische Zielorgan-Toxizität - wiederholte Exposition",
+                    "HazardCategory": "Kategorie 2"
+                },
+                {
+                    "HazardClass": "Sensibilisierung durch Hautkontakt",
+                    "HazardCategory": "Kategorie 1"
+                },
+                {
+                    "HazardClass": "Akute aquatische Toxizität",
+                    "HazardCategory": "Kategorie 1"
+                },
+                {
+                    "HazardClass": "Chronische aquatische Toxizität",
+                    "HazardCategory": "Kategorie 1"
+                }
+            ],
+            "Statements": [
+                {
+                    "Type": "H",
+                    "Number": "H302",
+                    "Text": "Gesundheitsschädlich bei Verschlucken."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H317",
+                    "Text": "Kann allergische Hautreaktionen verursachen."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H373",
+                    "Text": "Kann die Organe (Nervensystem) schädigen bei längerer oder wiederholter Exposition durch Verschlucken."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H400",
+                    "Text": "Sehr giftig für Wasserorganismen."
+                },
+                {
+                    "Type": "H",
+                    "Number": "H410",
+                    "Text": "Sehr giftig für Wasserorganismen mit langfristiger Wirkung."
+                },
+                {
+                    "Type": "U",
+                    "Number": "EUH401",
+                    "Text": "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P280",
+                    "Text": "Schutzhandschuhe/Schutzkleidung/Augenschutz/Gesichtsschutz tragen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P308 + P311",
+                    "Text": "BEI Exposition oder falls betroffen: GIFTINFORMATIONSZENTRUM/Arzt anrufen."
+                },
+                {
+                    "Type": "P",
+                    "Number": "P501",
+                    "Text": "Inhalt/Behälter in Übereinstimmung mit örtlichen Vorschriften entsorgen."
+                }
+            ],
+            "MSDS" : {
+                "Message": "Sicherheitsdatenblatt älter als zwei Jahre",
+                "Type": "Warning",
+                "Sheets" : [
+                    {
+                        "Language": "de",
+                        "Country": "DE",
+                        "ReleaseDate": "23.06.2014",
+                        "path": "msds/0000001007-deDE.pdf"
+                    }
+                ]
+            },
+            "ADR" : {
+                "UN-Number": "UN 3077",
+                "Description": "UMWELTGEFAEHRDENDER STOFF, FEST, N.A.G.",
+                "Class": "9",
+                "PackingGroup": "III"
+            },
+            "Treatment" : "C",
+            "Disposal" : "ST"
+        },
     ]
 }
