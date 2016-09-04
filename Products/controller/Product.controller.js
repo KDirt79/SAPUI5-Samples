@@ -18,19 +18,19 @@ sap.ui.define([
             var title;
             switch(oGroup.key) {
                 case "H":
-                    title = "Gefahrenhinweise";
+                    title = this.getView().getModel("i18n").getResourceBundle().getText("HazardStatements");
                     break;
                 case "P":
-                    title = "Sicherheitshinweise";
+                    title = this.getView().getModel("i18n").getResourceBundle().getText("PrecautionaryStatements"); //"Sicherheitshinweise";
                     break;
                 case "U":
-                    title = "Zusätzliche Angaben";
+                    title = this.getView().getModel("i18n").getResourceBundle().getText("EUHStatements"); //"Zusätzliche Angaben";
                     break;
                 case "R":
-                    title = "Risiken";
+                    title = this.getView().getModel("i18n").getResourceBundle().getText("RiskPhrases"); //"Risiken";
                     break;
                 case "S":
-                    title = "Sicherheitsratschläge";
+                    title = this.getView().getModel("i18n").getResourceBundle().getText("SecurityPhrases"); //"Sicherheitsratschläge";
                     break;
                 default:
                     title = "";

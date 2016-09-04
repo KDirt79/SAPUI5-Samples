@@ -15,7 +15,7 @@
                 items="{
                            path: '/Product',
                            sorter: {
-                                   path: 'Manufacturer/ManufacturerID',
+                                   path: 'Manufacturer/Name',
                                    descending: false,
                                    group: '.grouper'
                             },
