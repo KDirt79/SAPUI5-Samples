@@ -1,0 +1,38 @@
+<mvc:View
+        controllerName="com.fahmaih.samples.deliverymonitor.controller.Delivery"
+        xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m"
+		xmlns:u="sap.ui.unified">
+    <u:Shell id="uShell">
+        <u:headItems>
+            <u:ShellHeadItem tooltip="{i18n>Back}"
+					        icon="sap-icon://nav-back"
+					        press="handleNavBack" />
+            <u:ShellHeadItem tooltip="{i18n>Home}"
+                            icon="sap-icon://home"
+                            visible="true"
+                            press="handlePressHome" />
+        </u:headItems>
+        <u:headEndItems>
+        <u:ShellHeadItem icon="sap-icon://log"
+                        tooltip="{i18n>Logoff}"
+                        visible="false"
+                        press="handleLogoffPress" />
+        </u:headEndItems>
+        <u:user>
+            <u:ShellHeadUserItem image="sap-icon://person-placeholder"
+                                username="Karsten Klein"
+                                press="handleUserItemPressed" />
+        </u:user>
+        <u:paneContent>
+            <Text text="Lorem ipsum" />
+        </u:paneContent>
+
+        <HBox>
+            <Label text="{i18n>Delivery}" />
+            <Text text="{DeliveryID}" />
+        </HBox>
+
+    </u:Shell>
+
+</mvc:View>

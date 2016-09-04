@@ -96,6 +96,10 @@
                     "pattern" : "delivery/{DeliveryID}",
                     "name" : "Delivery",
                     "target" : "delivery"
+                },{
+                    "pattern" : "delivery/{Index}",
+                    "name" : "DeliveryIndex",
+                    "target" : "delivery"
                 }],
 
             "targets": {

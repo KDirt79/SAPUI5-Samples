@@ -62,9 +62,13 @@
                 <Column>
                     <Text text="{i18n>Status}" />
                 </Column>
+                <Column>
+                    <Text text="{i18n>Carrier}" />
+                </Column>
             </columns>
             <items>
-                <ColumnListItem>
+                <ColumnListItem type="Navigation"
+                               press="handleItemPress">
                     <cells>
                         <ObjectIdentifier title="{DeliveryID}" />
                         <Text text="{ShipPoint/Name}" />
@@ -78,6 +82,7 @@
                         <Text text="{DelivType}" />
                         <Text text="{Vendor/Name}, {Vendor/City}" />
                         <Text text="{TotalStatus}" />
+                        <Text text="{Carrier/Name}" />
                     </cells>
                 </ColumnListItem>
             </items>

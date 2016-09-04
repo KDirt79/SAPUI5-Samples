@@ -2,6 +2,7 @@
    "Deliveries" : [
        {
            "DeliveryID": "1000000001",
+           "Index": 0,
            "ShipPoint": {
                "ShipPointID": "0001",
                "Name": "Annahmestelle Entenhausen"
@@ -17,32 +18,46 @@
                "Country": "DE"
            },
            "Carrier": {
-               "CarrierID": "",
-               "Name": "",
+               "CarrierID": "1000000001",
+               "Name": "Rubber Duck",
                "Street": "",
                "PostCode": "",
                "City": "",
-               "Country": ""
+               "Country": "DE"
            },
            "DelivItems": [
                {
                    "DelivItem": "000010",
-                   "Material": "",
+                   "Material": "000000000000002279",
                    "Batch": "",
                    "ValType": "",
-                   "Description": "",
-                   "DelivQty": "",
-                   "BaseUom": "",
-                   "Plant": "",
-                   "StgeLoc": "",
-                   "PO-Number": "",
-                   "PO-Item": ""
+                   "Description": "Waffeleisen",
+                   "DelivQty": "500.000",
+                   "BaseUom": "ST",
+                   "Plant": "0001",
+                   "StgeLoc": "0010",
+                   "PO-Number": "1500000012",
+                   "PO-Item": "00010"
+               },
+               {
+                   "DelivItem": "000020",
+                   "Material": "000000000000004711",
+                   "Batch": "",
+                   "ValType": "",
+                   "Description": "Nudelholz",
+                   "DelivQty": "300.000",
+                   "BaseUom": "ST",
+                   "Plant": "0001",
+                   "StgeLoc": "0010",
+                   "PO-Number": "1500000012",
+                   "PO-Item": "00020"
                }
            ],
            "TotalStatus": "A"
        },
        {
            "DeliveryID": "1000000002",
+           "Index": 1,
            "ShipPoint": {
                "ShipPointID": "0001",
                "Name": "Annahmestelle Entenhausen"
@@ -58,12 +73,12 @@
                "Country": "DE"
            },
            "Carrier": {
-               "CarrierID": "",
-               "Name": "",
+               "CarrierID": "1000000002",
+               "Name": "Pig Ben",
                "Street": "",
                "PostCode": "",
                "City": "",
-               "Country": ""
+               "Country": "DE"
            },
            "DelivItems": [
                {
@@ -84,6 +99,7 @@
        },
        {
            "DeliveryID": "1000000003",
+           "Index": 2,
            "ShipPoint": {
                "ShipPointID": "0001",
                "Name": "Annahmestelle Entenhausen"
@@ -99,12 +115,12 @@
                "Country": "DE"
            },
            "Carrier": {
-               "CarrierID": "",
-               "Name": "",
+               "CarrierID": "1000000003",
+               "Name": "Spedition Mordhorst",
                "Street": "",
                "PostCode": "",
                "City": "",
-               "Country": ""
+               "Country": "DE"
            },
            "DelivItems": [
                {

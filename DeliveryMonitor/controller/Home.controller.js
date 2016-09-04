@@ -4,6 +4,10 @@ sap.ui.define([
         'com/fahmaih/samples/deliverymonitor/controller/BaseController'
     ], function (BaseController) {
     return BaseController.extend("com.fahmaih.samples.deliverymonitor.controller.Home", {
-        onInit: function () {}        
+        onInit: function () {},
+        handleItemPress: function(oEvent) {
+            var oContext = oEvent.getSource().getBindingContext();
+            this.getRouter().navTo("DeliveryIndex", { Index: oContext.getProperty("Index")});
+        }
     })
 })

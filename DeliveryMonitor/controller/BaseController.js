@@ -18,6 +18,9 @@ sap.ui.define([
             else {
                 this.getRouter().navTo("Home", {}, true /*no history*/ );
             }
+        },
+        handlePressHome: function(oEvent) {
+            this.getRouter().navTo("Home", {}, true);
         }
     });
 });
