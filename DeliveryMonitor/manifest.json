@@ -35,8 +35,8 @@
             "phone": true
         },
         "supportedThemes": [
-            "sap_hcb",
-            "sap_bluecrystal"
+            "sap_bluecrystal",
+            "sap_belize"
         ]
     },
 
@@ -97,7 +97,7 @@
                     "name" : "Delivery",
                     "target" : "delivery"
                 },{
-                    "pattern" : "delivery/{Index}",
+                    "pattern" : "deliveryIndex/{Index}",
                     "name" : "DeliveryIndex",
                     "target" : "delivery"
                 }],

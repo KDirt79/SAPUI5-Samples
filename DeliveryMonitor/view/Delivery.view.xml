@@ -3,7 +3,7 @@
         xmlns:mvc="sap.ui.core.mvc"
 		xmlns="sap.m"
 		xmlns:u="sap.ui.unified">
-    <u:Shell id="uShell">
+<u:Shell id="uShell">
         <u:headItems>
             <u:ShellHeadItem tooltip="{i18n>Back}"
 					        icon="sap-icon://nav-back"

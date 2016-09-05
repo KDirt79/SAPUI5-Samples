@@ -7,7 +7,10 @@ sap.ui.define([
         onInit: function () {},
         handleItemPress: function(oEvent) {
             var oContext = oEvent.getSource().getBindingContext();
-            this.getRouter().navTo("DeliveryIndex", { Index: oContext.getProperty("Index")});
+            console.log(oContext.getProperty("Index"));
+            this.getRouter().navTo("DeliveryIndex", {
+                Index: oContext.getProperty("Index")
+            });
         }
     })
 })

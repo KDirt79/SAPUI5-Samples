@@ -4,9 +4,13 @@ sap.ui.define([
         'com/fahmaih/samples/deliverymonitor/controller/BaseController'
     ], function (BaseController) {
     return BaseController.extend("com.fahmaih.samples.deliverymonitor.controller.Delivery", {
-        onInit: function () {
+        onInit: function() {
             var oRouter = this.getRouter();
+            var oRoute = oRouter.getRoute("DeliveryIndex");
             oRouter.getRoute("DeliveryIndex").attachMatched(this._onRouteMatched, this);
+        },
+        handleItemPress: function(oEvent) {
+
         },
         _onRouteMatched: function(oEvent) {
             var oArgs, oView;
@@ -15,13 +19,13 @@ sap.ui.define([
             oView = this.getView();
 
             oView.bindElement({
-                path : "Deliveries/" + oArgs.Index,
+                path : "/Deliveries/" + oArgs.Index,
                 events: {
                     change: this._onBindingChange.bind(this),
-                    dataRequested: function (oEvent) {
+                    dataRequested: function(oEvent) {
                         oView.setBusy(true);
                     },
-                    dataReceived: function (oEvent) {
+                    dataReceived: function(oEvent) {
                         oView.setBusy(false);
                     }
                 }
