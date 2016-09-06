@@ -12,7 +12,7 @@
         },
         "dataSources": {
             "mainService": {
-                "uri": "/model/data.json",
+                "uri": "https://kdirt79.github.io/SAPUI5-Samples/DeliveryMonitor/model/data.json",
                 "type": "sap.ui.model.json.JSONModel"
             }
         }
