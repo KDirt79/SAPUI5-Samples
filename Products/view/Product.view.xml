@@ -83,6 +83,21 @@
                         </ObjectPageSubSection>
                         <ObjectPageSubSection title="{i18n>Subsection2.2}"
                                                mode="Collapsed">
+                            <moreBlocks>
+                                <m:FlexBox direction="Column"
+                                            alignItems="Start">
+                                    <m:items>
+                                        <m:CheckBox text="{i18n>ReactAcids}" selected="{Reactivity/ReactAcids}" />
+                                        <m:CheckBox text="{i18n>ReactBases}" selected="{Reactivity/ReactBases}" />
+                                        <m:CheckBox text="{i18n>ReactOxidants}" selected="{Reactivity/ReactOxidants}" />
+                                        <m:CheckBox text="{i18n>ReactWater}" selected="{Reactivity/ReactWater}" />
+                                        <m:CheckBox text="{i18n>ReactMetal}" selected="{Reactivity/ReactMetal}" />
+                                    </m:items>
+                                </m:FlexBox>
+                            </moreBlocks>
+                        </ObjectPageSubSection>
+                        <ObjectPageSubSection title="{i18n>Subsection2.3}"
+                                               mode="Collapsed">
                             <blocks>
                                 <m:Table id="idCasNumbers"
                                         inset="false"

@@ -20,8 +20,15 @@
                 "Mail": "webmaster@berghoff-online.de",
                 "URL": "http://www.berghoff-online.de"
             },
-            "Characterisation-1": "-",
-            "Characterisation-2": "-",
+            "Characterisation-1": "",
+            "Characterisation-2": "",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "38641-94-0",
@@ -150,6 +157,13 @@
             },
             "Characterisation-1": "Kaliumsalz von N-(phosphonomethyl)glycin",
             "Characterisation-2": "Kaliumsalz von Glyphosat",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "70901-12-1",
@@ -320,8 +334,15 @@
                 "Mail": "SDSQuestion@dow.com",
                 "URL": ""
             },
-            "Characterisation-1": "-",
-            "Characterisation-2": "-",
+            "Characterisation-1": "",
+            "Characterisation-2": "",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "57754-85-5",
@@ -387,8 +408,15 @@
                 "Mail": "",
                 "URL": ""
             },
-            "Characterisation-1": "-",
-            "Characterisation-2": "-",
+            "Characterisation-1": "",
+            "Characterisation-2": "",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "8018-01-7",
@@ -492,6 +520,13 @@
             },
             "Characterisation-1": "Suspensionskonzentrat (SC)",
             "Characterisation-2": "Fluazinam 500g/l",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "79622-59-6",
@@ -638,8 +673,15 @@
                 "Mail": "registrierung.deutschland@syngenta.com",
                 "URL": ""
             },
-            "Characterisation-1": "-",
-            "Characterisation-2": "-",
+            "Characterisation-1": "",
+            "Characterisation-2": "",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "98886-44-3",
@@ -775,8 +817,15 @@
                 "Mail": "SDSQuestion@dow.com",
                 "URL": ""
             },
-            "Characterisation-1": "-",
-            "Characterisation-2": "-",
+            "Characterisation-1": "",
+            "Characterisation-2": "",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "81406-37-3",
@@ -975,6 +1024,13 @@
             },
             "Characterisation-1": "Wasserdispergierbares Granulat (WG)",
             "Characterisation-2": "Flufenacet 24 %, Metribuzin 17,5 %",
+            "Reactivity": {
+                "Acids": "false",
+                "Bases": "false",
+                "Oxidants": "false",
+                "Water": "false",
+                "Metal": "false",
+            },
             "CAS-Numbers" : [
                 {
                     "CAS-Number": "142459-58-3",
