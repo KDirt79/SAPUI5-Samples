@@ -87,11 +87,11 @@
                                 <m:FlexBox direction="Column"
                                             alignItems="Start">
                                     <m:items>
-                                        <m:CheckBox text="{i18n>ReactAcids}" selected="{Reactivity/ReactAcids}" />
-                                        <m:CheckBox text="{i18n>ReactBases}" selected="{Reactivity/ReactBases}" />
-                                        <m:CheckBox text="{i18n>ReactOxidants}" selected="{Reactivity/ReactOxidants}" />
-                                        <m:CheckBox text="{i18n>ReactWater}" selected="{Reactivity/ReactWater}" />
-                                        <m:CheckBox text="{i18n>ReactMetal}" selected="{Reactivity/ReactMetal}" />
+                                        <m:CheckBox text="{i18n>ReactAcids}" selected="{Reactivity/ReactAcids}" enabled="false" />
+                                        <m:CheckBox text="{i18n>ReactBases}" selected="{Reactivity/ReactBases}" enabled="false" />
+                                        <m:CheckBox text="{i18n>ReactOxidants}" selected="{Reactivity/ReactOxidants}" enabled="false" />
+                                        <m:CheckBox text="{i18n>ReactWater}" selected="{Reactivity/ReactWater}" enabled="false" />
+                                        <m:CheckBox text="{i18n>ReactMetal}" selected="{Reactivity/ReactMetal}" enabled="false" />
                                     </m:items>
                                 </m:FlexBox>
                             </moreBlocks>
