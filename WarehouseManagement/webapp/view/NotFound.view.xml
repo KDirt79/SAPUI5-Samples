@@ -1,0 +1,16 @@
+<mvc:View
+        controllerName="fahmaih.samples.warehouse.controller.NotFound"
+        xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m">
+
+	<MessagePage
+			id="page"
+			title="{i18n>NotFound}"
+			text="{i18n>NotFound.text}"
+			icon="{sap-icon://document}"
+			description="{i18n>NotFound.description}"
+			showNavButton="true"
+			navButtonPress="onNavBack">
+	</MessagePage>
+
+</mvc:View>

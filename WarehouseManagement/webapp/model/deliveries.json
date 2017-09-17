@@ -1,0 +1,25 @@
+{
+    "Deliveries": [
+        {
+            "DelivNumb": "0140123456",
+            "Customer": "0000001260",
+            "CustomerName": "Max Mustermann KG",
+            "CustomerAddress": "Max Mustermann KG, Musterstraße 1, 12345 Musterstadt",
+            "OpenTransOrders": 56
+        },
+        {
+            "DelivNumb": "0140123457",
+            "Customer": "0000001260",
+            "CustomerName": "Max Mustermann KG",
+            "CustomerAddress": "Max Mustermann KG, Musterstraße 1, 12345 Musterstadt",
+            "OpenTransOrders": 56
+        },
+        {
+            "DelivNumb": "0141223487",
+            "Customer": "0000059483",
+            "CustomerName": "CBTG AG",
+            "CustomerAddress": "CBTG AG, Große Straße 12, 55555 Munkelbach",
+            "OpenTransOrders": 28
+        }
+    ]
+}

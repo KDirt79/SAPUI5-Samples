@@ -1,0 +1,101 @@
+{
+  "_version": "1.1.0",
+  "sap.app": {
+	"_version": "1.1.0",
+	"id": "fahmaih.samples.warehouse",
+	"type": "application",
+	"i18n": "i18n/i18n.properties",
+	"title": "{{appTitle}}",
+	"description": "{{appDescription}}",
+	"applicationVersion": {
+	  "version": "1.0.0"
+	}
+  },
+  "sap.ui": {
+	"_version": "1.1.0",
+	"technology": "UI5",
+	"deviceTypes": {
+	  "desktop": true,
+	  "tablet": true,
+	  "phone": true
+	},
+	"supportedThemes": [
+	  "sap_belize",
+      "sap_belize_plus"
+	]
+  },
+  "sap.ui5": {
+	"_version": "1.1.0",
+	"rootView": "fahmaih.samples.warehouse.view.App",
+	"dependencies": {
+	  "minUI5Version": "1.30",
+	  "libs": {
+		"sap.m": {}
+	  }
+	},
+	"models": {
+	  "i18n": {
+		"type": "sap.ui.model.resource.ResourceModel",
+		"settings": {
+		  "bundleName": "fahmaih.samples.warehouse.i18n.i18n"
+		}
+	  }
+	},
+    "routing": {
+        "config": {
+            "routerClass": "sap.m.routing.Router",
+            "viewType": "XML",
+            "viewPath": "fahmaih.samples.warehouse.view",
+            "controlId": "app",
+            "controlAggregation": "pages",
+            "transition": "slide",
+            "bypassed": {
+               "target": "notFound"
+            }
+         },
+         "routes": [{
+            "pattern": "",
+            "name": "Home",
+            "target": "home"
+         },{
+             "pattern": "picking",
+             "name": "Picking",
+             "target": "picking"
+         },{
+             "pattern": "putaway",
+             "name": "Putaway",
+             "target": "putaway"
+         },{
+             "pattern": "stockTransfer",
+             "name": "StockTransfer",
+             "target": "stockTransfer"
+         },{
+             "pattern": "delivery/{DelivNumb}",
+             "name": "Delivery",
+             "target": "delivery"
+         }],
+         "targets": {
+            "home": {
+               "viewName": "Home",
+               "viewLevel" : 1
+            },
+            "picking": {
+                "viewName": "Picking"
+            },
+            "putaway": {
+                "viewName": "Putaway"
+            },
+            "stockTransfer": {
+                "viewName": "StockTransfer"
+            },
+            "delivery": {
+                "viewName": "Delivery"
+            },
+            "notFound": {
+               "viewName": "NotFound",
+               "transition": "show"
+            }
+         }
+    }
+  }
+}

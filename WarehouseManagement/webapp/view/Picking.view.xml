@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="fahmaih.samples.warehouse.controller.Picking"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Page title="{i18n>Picking}" 
+          class="sapUiResponsiveContentPadding"
+          showHeader="true"
+          showNavButton="true"
+		  navButtonPress="onNavBack"
+          enableScrolling="false">
+        <List
+            id="idPickList"
+		    items="{
+			    path: '/Deliveries',
+			    sorter: {
+				    path: 'CustomerName',
+				    descending: false,
+				    group: true
+			    },
+			    groupHeaderFactory: '.getGroupHeader'
+		    }"
+		    headerText="{i18n>Deliveries}" >
+            <headerToolbar>
+                <Toolbar>
+                    <Title
+                            id="listHeader"
+                            text="{i18n>pickListTitle}"/>
+                    <ToolbarSpacer/>
+                    <SearchField
+                            id="searchField"
+                            search="onSearch"
+                            tooltip="{i18n>pickListSearchTooltip}"
+                            width="auto"/>
+                </Toolbar>
+            </headerToolbar>
+            <items>
+                <ObjectListItem
+                    title="{DelivNumb}"
+                    type="Active"
+                    press="onListItemPress"
+                    number="{OpenTransOrders}"
+                    key="{DelivNumb}">
+                    <attributes>
+                        <ObjectAttribute text="{CustomerAddress}" />
+                    </attributes>
+                </ObjectListItem>
+            </items>
+	    </List>
+    </Page>
+</mvc:View>
