@@ -45,10 +45,11 @@ sap.ui.define([
             } );
         },
         handleItemPress: function(oEvent) {
-            var sSource = oEvent.getSource().getModel().getData().path;
-	    this._pdfViewer.setSource(sSource);
-	    this._pdfViewer.setTitle("MSDS");
-	    this._pdfViewer.open();
+            var oContext = oEvent.getSource().getBindingContext();
+            var sSource = oContext.getProperty("path");
+            this._pdfViewer.setSource(sSource);
+            this._pdfViewer.setTitle("MSDS");
+            this._pdfViewer.open();
         },
         _onRouteMatched: function(oEvent) {
             var oArgs, oView;
