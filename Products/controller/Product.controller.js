@@ -45,8 +45,8 @@ sap.ui.define([
             } );
         },
         handleItemPress: function(oEvent) {
-            var oContext = oEvent.getSource().getBindingContext();
             var oItemSelect = oEvent.getParameter("listItem");
+            var oContext = oItemSelect.getBindingContext();
             var sSource = "msds/0000001007-deDE.pdf";
             this._pdfViewer.setSource(sSource);
             this._pdfViewer.setTitle("MSDS");
