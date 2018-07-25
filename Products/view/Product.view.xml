@@ -274,7 +274,7 @@
 				                        </m:Column>
 				                    </m:columns>
 				                    <m:items>
-				                        <m:ColumnListItem type="Navigation">
+				                        <m:ColumnListItem type="Active">
 				                            <m:cells>
 				                                <m:Text text="{path: 'Language', formatter:'com.fahmaih.samples.products.util.Formatter.languageCode' }" />
 				                                <m:Text text="{path: 'Country', formatter:'com.fahmaih.samples.products.util.Formatter.countryCode'}" />
