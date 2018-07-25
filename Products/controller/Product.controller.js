@@ -2,12 +2,15 @@ jQuery.sap.require("com.fahmaih.samples.products.util.Formatter");
 
 sap.ui.define([
         'com/fahmaih/samples/products/controller/BaseController',
+        "sap/m/PDFViewer",
         'sap/m/GroupHeaderListItem'
-    ], function (BaseController, GroupHeaderListItem) {
+    ], function (BaseController, PDFViewer, GroupHeaderListItem) {
     return BaseController.extend("com.fahmaih.samples.products.controller.Product", {
         onInit: function () {
             var oRouter = this.getRouter();
             oRouter.getRoute("ProductIndex").attachMatched(this._onRouteMatched, this);
+            this._pdfViewer = new PDFViewer();
+	    this.getView().addDependent(this._pdfViewer);
         },
         grouper: function(oGroup) {
             return {
@@ -42,7 +45,10 @@ sap.ui.define([
             } );
         },
         handleItemPress: function(oEvent) {
-
+            var sSource = oEvent.getSource().getModel().getData().path;
+	    this._pdfViewer.setSource(sSource);
+	    this._pdfViewer.setTitle("MSDS");
+	    this._pdfViewer.open();
         },
         _onRouteMatched: function(oEvent) {
             var oArgs, oView;
